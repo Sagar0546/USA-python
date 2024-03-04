@@ -29,7 +29,6 @@ def predict():
 
 	return render_template("main.html",prediction_text=" Expected Price {}".format(result))
 
+if __name__=="__main__":
+    app.run(host='0.0.0.0',port=3000,debug=True)
 
-if __name__ == "__main__":
-	app.debug=True
-	app.run(host = '127.0.1.1', port= 8000)
